@@ -1,0 +1,185 @@
+/* uCal.css */
+
+/* import */
+@import url(base.css);
+@import url(font.css);
+
+/** GOING TO HACTAGS **/
+
+sSelect {
+    color: #fff;
+    background: #222;
+    height: 2.5rem;
+    width:  2.5rem;
+
+    text-align: center;
+
+    padding: 1dvh 1dvw;
+    border-radius: 10px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+cSelect {
+    color: #fff;
+    background: #222;
+    height: 2.5rem;
+    width:  2.5rem;
+
+    text-align: center;
+
+    padding: 1dvh 1dvw;
+    border-radius: 10px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/** END **/
+
+body {
+    margin-left:  5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 8dvw;
+    width: 100%;
+    text-align: center;
+}
+
+p { text-align: center; }
+
+h1 > p {
+    font-size: 4dvh;
+    line-height: 1dvh;
+    width: 100%;
+    color: #ccc
+}
+
+div.block {
+    background: #333;
+    height: 130dvh;
+
+    margin: auto;
+    padding: 1% 1%;
+    border-radius: 20px;
+
+    display: grid;
+    justify-content: center;
+    column-gap: 2.5dvw;
+    align-items: center;
+}
+
+div.tool {
+    font-size: 2rem;
+
+    background: #555;
+    min-height: 30dvh;
+    min-width:  30dvw;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.tool > p {
+    display: inline-block;
+    font-size: 3dvh;
+    width: 40%;
+}
+
+div.small {
+    min-height: 15dvh;
+}
+
+div.wide {
+    min-width: 60dvw;
+    flex-direction: row;
+}
+
+div.tool > input {
+    /* font */
+    font-family: "Fira Code";
+    font-size: 1.5dvw;
+
+    /* appearance */
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    /* display */
+    width: 90%;
+    padding: 1dvh 1dvw;
+    height: 2dvw;
+
+    /* other */
+    text-overflow: ellipsis ellipsis;
+}
+
+div.tool > output {
+    /* font */
+    font-family: "Fira Code";
+    font-size: 1.5dvw;
+
+    /* appearance */
+    /* color: #000; */
+    /* background: #777; */
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    /* display */
+    max-width: 90%;
+    padding: 1dvh 1dvw;
+    min-height: 2dvw;
+
+    /* other */
+    cursor: pointer;
+}
+
+.btn {
+    /* font */
+
+    /* appearance */
+    background: #333;
+
+    /* display */
+    padding: 1dvh 1dvw;
+    border-radius: 1rem;
+
+    /* other */
+    user-select: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    div.block {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    div.block > p {
+        display: inline-block;
+        font-size: 2dvh;
+        width: 90dvw;
+        height: 40%;
+    }
+
+    div.tool {
+        height: 60%;
+        width: 90%;
+
+        margin: auto;
+
+        border-radius: 10px;
+
+        margin-bottom: 10%;
+    }
+}

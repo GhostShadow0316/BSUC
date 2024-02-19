@@ -1,0 +1,10 @@
+# .gitignore
+
+.vscode/
+test/
+desktop.ini
+r.ignore
+upload.bat
+
+static/
+static_original/
