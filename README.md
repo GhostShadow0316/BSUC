@@ -1,6 +1,6 @@
 <!-- README.md -->
 
-# BSUC: HAC Brawl Stars Upgrade Calculator
+# BSUC: Brawl Stars Upgrade Calculator
 > Wonder how much coins & power points needed to upgrade your brawler?  
 > This is the tool you need!
 
@@ -19,6 +19,13 @@
 - click to toggle **Epic Gear** / **Mythic Gear** / **Hypercharge**
 - go to the top to see the coin (🟡), power point (🟣) or gem (🟢) cost
 - also play around the **New**, **Enough**, **Maxed out** buttons
+
+---
+
+### Known Problem
+- Mobile is not supported
+- Layout might break on some screen
+- value won't change if not scroll on number
 
 ---
 
