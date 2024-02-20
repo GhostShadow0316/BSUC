@@ -29,4 +29,7 @@
 
 ---
 
-- latest update on 2024-02-19
+### CHANGELOG
+- (2024-02-20) fix **Enough** button just upgrade brawler to power 9
+
+- latest update on 2024-02-20

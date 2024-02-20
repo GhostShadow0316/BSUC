@@ -139,7 +139,7 @@ const mGear       = document.getElementById("mGear");
 const hypercharge = document.getElementById("hypercharge");
 
 const newBtn    = [document.getElementById("new")   , [1,  1, 0, 0, 0, 0, 0, 0]];
-const enoughBtn = [document.getElementById("enough"), [1,  9, 1, 1, 2, 0, 0, 0]];
+const enoughBtn = [document.getElementById("enough"), [1, 10, 1, 1, 2, 0, 0, 0]];
 const maxedBtn  = [document.getElementById("maxed") , [1, 11, 2, 2, 6, 1, 1, 1]];
 
 const output = [
