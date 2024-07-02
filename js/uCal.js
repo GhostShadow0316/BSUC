@@ -1,5 +1,12 @@
 // uCal.js
 
+const rs = getComputedStyle(document.querySelector(':root'));
+const primary   = rs.getPropertyValue("--primary");
+const secondary = rs.getPropertyValue("--secondary");
+const accent    = rs.getPropertyValue("--accent");
+const lock      = rs.getPropertyValue("--lock");
+
+
 //* GOING TO HACTAGS
 
 for (let elem of document.getElementsByTagName("sSelect")) {
@@ -20,7 +27,7 @@ for (let elem of document.getElementsByTagName("sSelect")) {
 
     const status = elem.getAttribute("status")
     elem.status = (status !== null) ? +(elem.getAttribute("status")) : 1;
-    elem.style["background"] = elem.status ? "#222" : "#000";
+    elem.style["background"] = elem.status ? primary : lock;
 
     elem.textContent = current;
     elem.value = current;
@@ -50,7 +57,7 @@ for (let elem of document.getElementsByTagName("sSelect")) {
 
     elem.addEventListener("click", (e) => {
         elem.status = !elem.status;
-        elem.style["background"] = elem.status ? "#222" : "#000";
+        elem.style["background"] = elem.status ? primary : lock;
         elem.dispatchEvent(lockEvent);
     })
 
@@ -139,7 +146,7 @@ const mGear       = document.getElementById("mGear");
 const hypercharge = document.getElementById("hypercharge");
 
 const newBtn    = [document.getElementById("new")   , [1,  1, 0, 0, 0, 0, 0, 0]];
-const enoughBtn = [document.getElementById("enough"), [1, 10, 1, 1, 2, 0, 0, 0]];
+const enoughBtn = [document.getElementById("enough"), [1,  9, 1, 1, 1, 0, 0, 0]];
 const maxedBtn  = [document.getElementById("maxed") , [1, 11, 2, 2, 6, 1, 1, 1]];
 
 const output = [

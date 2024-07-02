@@ -4,33 +4,62 @@
 @import url(base.css);
 @import url(font.css);
 
+:root {
+    /* font */
+    --main-font: "jf";
+    --alt-font: "Fira Code";
+
+    /* color */
+    --text: #fff;
+    --bg: #333;
+    --primary: #222;
+    --secondary: #aaa;
+    --accent: #555;
+    --lock: #000;
+    --btn-pressed: #333;
+
+    /* style */
+    --bdrs: 0.3em;
+}
+
 /** GOING TO HACTAGS **/
 
 sSelect {
-    color: #fff;
-    background: #222;
+    font-family: var(--alt-font);
+
+    color: var(--text);
+    background: var(--primary);
+
+    /* font-size: 2.5rem; */
+    line-height: 2.5rem;
     height: 2.5rem;
     width:  2.5rem;
 
     text-align: center;
+    align-items: center;
 
     padding: 1dvh 1dvw;
-    border-radius: 10px;
+    border-radius: var(--bdrs);
 
     cursor: pointer;
     user-select: none;
 }
 
 cSelect {
-    color: #fff;
-    background: #222;
+    font-family: var(--alt-font);
+
+    color: var(--text);
+    background: var(--primary);
+
+    /* font-size: 2.5rem; */
+    line-height: 2.5rem;
     height: 2.5rem;
     width:  2.5rem;
 
     text-align: center;
 
     padding: 1dvh 1dvw;
-    border-radius: 10px;
+    border-radius: var(--bdrs);
 
     cursor: pointer;
     user-select: none;
@@ -52,19 +81,18 @@ h1 {
 p { text-align: center; }
 
 h1 > p {
+    color: var(--secondary);
     font-size: 4dvh;
-    line-height: 1dvh;
     width: 100%;
-    color: #ccc
 }
 
 div.block {
-    background: #333;
-    height: 130dvh;
+    background: var(--bg);
+    height: 140dvh;
 
     margin: auto;
     padding: 1% 1%;
-    border-radius: 20px;
+    border-radius: 1em 1em;
 
     display: grid;
     justify-content: center;
@@ -72,14 +100,31 @@ div.block {
     align-items: center;
 }
 
+.btn {
+    /* font */
+    font-size: 3dvh;
+
+    /* appearance */
+    background: var(--primary);
+
+    /* display */
+    padding: 1dvh 1dvw;
+    border-radius: var(--bdrs);
+
+    /* other */
+    user-select: none;
+    cursor: pointer;
+}
+.btn:active { background: var(--btn-pressed); }
+
 div.tool {
     font-size: 2rem;
 
-    background: #555;
+    background: var(--accent);
     min-height: 30dvh;
     min-width:  30dvw;
 
-    border-radius: 10px;
+    border-radius: var(--bdrs);
 
     display: flex;
     flex-direction: column;
@@ -102,84 +147,46 @@ div.wide {
     flex-direction: row;
 }
 
-div.tool > input {
-    /* font */
-    font-family: "Fira Code";
-    font-size: 1.5dvw;
-
-    /* appearance */
-    color: #000;
-    background: #fff;
-    border: none;
-    border-radius: 1rem;
-    outline: none;
-
-    /* display */
-    width: 90%;
-    padding: 1dvh 1dvw;
-    height: 2dvw;
-
-    /* other */
-    text-overflow: ellipsis ellipsis;
+div.gears {
+    height: 5dvh;
 }
 
-div.tool > output {
-    /* font */
-    font-family: "Fira Code";
-    font-size: 1.5dvw;
-
-    /* appearance */
-    /* color: #000; */
-    /* background: #777; */
-    border: none;
-    border-radius: 1rem;
-    outline: none;
-
-    /* display */
-    max-width: 90%;
-    padding: 1dvh 1dvw;
-    min-height: 2dvw;
-
-    /* other */
-    cursor: pointer;
-}
-
-.btn {
-    /* font */
-
-    /* appearance */
-    background: #333;
-
-    /* display */
-    padding: 1dvh 1dvw;
-    border-radius: 1rem;
-
-    /* other */
-    user-select: none;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 1080px) {
-    div.block {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    div.block > p {
-        display: inline-block;
-        font-size: 2dvh;
-        width: 90dvw;
-        height: 40%;
-    }
+@media screen and (max-width: 900px) {
+    h1 > p { font-size: 4dvw; }
 
     div.tool {
-        height: 60%;
-        width: 90%;
-
-        margin: auto;
-
-        border-radius: 10px;
-
-        margin-bottom: 10%;
+        min-height: 32dvh;
+        min-width: 40dvw;
     }
+    div.tool > p { width: 100%; }
+
+    .btn, sSelect, cSelect { padding: 1dvh 2dvw; }
+
+    #gears {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #gear  {
+        display: block;
+        line-height: 2rem;
+        height: 2rem;
+    }
+
+    #eGear {
+        display: block;
+        line-height: 2rem;
+        height: 2rem;
+    }
+
+    #mGear {
+        display: block;
+        line-height: 2rem;
+        height: 2rem;
+    }
+
 }
