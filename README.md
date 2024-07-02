@@ -4,7 +4,7 @@
 > Wonder how much coins & power points needed to upgrade your brawler?  
 > This is the tool you need!
 
-### Use directly on [https://brawl.hac.rf.gd/uCal/uCal.html](https://brawl.hac.rf.gd/uCal/uCal.html)
+### Use directly on [https://brawl.hac.rf.gd/uCal/index.html](https://brawl.hac.rf.gd/uCal/index.html)
 
 ---
 
