@@ -4,7 +4,7 @@
 > Wonder how much coins & power points needed to upgrade your brawler?  
 > This is the tool you need!
 
-### Use directly on [https://brawl.hac.rf.gd/uCal/index.html](https://brawl.hac.rf.gd/uCal/index.html)
+### Use directly on [https://brawl.hac.rf.gd/uCal.html](https://brawl.hac.rf.gd/uCal.html)
 
 ---
 
@@ -34,14 +34,15 @@
 
 ### CHANGELOG
 
-- (2024-02-20) added CHANGELOG in README.md
-- (2024-02-20) fix **Enough** button just upgrade brawler to power 9
+- (2024-02-20) Added CHANGELOG in README.md
+- (2024-02-20) Fix **Enough** button just upgrade brawler to power 9
 
 - (2024-02-22) **Enough** now only upgrade brawler to power 9 and buy one gear
 
 - (2024-07-02) Update link and rename `uCal.html` to `index.html`
 
+- (2024-07-07) Update link and rename `uCal/index.html` to `uCal.html`
 
 ---
 
-- latest update on 2024-07-02
+- latest update on 2024-07-07
